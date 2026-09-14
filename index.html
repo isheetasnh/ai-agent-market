@@ -35,6 +35,8 @@
   .stat .l{font-size:14px;color:var(--muted);margin-top:6px}
   .stat .s{font-size:11px;color:#6b7896;margin-top:10px}
   table{width:100%;border-collapse:collapse;font-size:14.5px}
+  .tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .tscroll table{min-width:520px}
   th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
   th{color:var(--muted);font-weight:600;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em}
   td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
@@ -84,6 +86,7 @@
   <div class="wrap">
     <h2>The forecasts don't agree — and that matters</h2>
     <p class="sub">Same technology, five analyst houses, wildly different end points. Definitions of "agent" vs "agentic AI" vs "agent platform" drive most of the spread.</p>
+    <div class="tscroll">
     <table>
       <thead><tr><th>Source</th><th>Base year</th><th>Forecast</th><th>CAGR</th></tr></thead>
       <tbody>
@@ -94,6 +97,7 @@
         <tr><td>Gartner <span class="tag">software revenue</span></td><td class="num">—</td><td class="num">~$450B by 2035</td><td class="num">—</td></tr>
       </tbody>
     </table>
+    </div>
     <p class="caveat" style="margin-top:24px">Read the spread, not the point estimate. Every house agrees on direction
       (40%+ compounding) and disagrees on scope by a factor of five. Gartner's $450B counts agentic capability embedded
       in enterprise software — roughly 30% of the total software market — not standalone agent products.</p>
